@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Stories.hello</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">Stories/hello.story</div>
+<div class="scenario">
+<h2>Scenario: Login into google page</h2>
+<div class="step successful">Given I open google page</div>
+<div class="step successful">When I search for term 'apple'</div>
+<div class="step failed">Then I should see link for 'apple' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.thucydides.core.webdriver.WebdriverAssertionError: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;</span></div>
+<pre class="failure">net.thucydides.core.webdriver.WebdriverAssertionError: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at com.step.HelloStep.shouldSeeDefinitionOfApple(HelloStep.java:32)
+	at com.step.HelloStep$$EnhancerByCGLIB$$7501d9ea.CGLIB$shouldSeeDefinitionOfApple$2(&lt;generated&gt;)
+	at com.step.HelloStep$$EnhancerByCGLIB$$7501d9ea$$FastClassByCGLIB$$82b2bad.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:310)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethodAndNotifyFailures(StepInterceptor.java:225)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:218)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:122)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:56)
+	at com.step.HelloStep$$EnhancerByCGLIB$$7501d9ea.shouldSeeDefinitionOfApple(&lt;generated&gt;)
+	at com.testSuite.maps.HelloMap.shouldSeeDefinitionOfApple(HelloMap.java:28)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:535)
+...</pre>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

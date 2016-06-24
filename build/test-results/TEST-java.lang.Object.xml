@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="java.lang.Object" tests="2" skipped="0" failures="1" errors="0" timestamp="2016-03-02T01:59:53" hostname="BAHCND5292F7T" time="20.579">
+  <properties/>
+  <testcase name="BeforeStories" classname="java.lang.Object" time="0.0"/>
+  <testcase name="AfterStories" classname="java.lang.Object" time="0.41">
+    <failure message="java.lang.RuntimeException: java.lang.RuntimeException: Report generation failure" type="java.lang.RuntimeException">java.lang.RuntimeException: java.lang.RuntimeException: Report generation failure
+	at net.serenitybdd.jbehave.runners.SerenityReportingRunner.run(SerenityReportingRunner.java:161)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:69)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.RuntimeException: Report generation failure
+	at net.thucydides.core.reports.ReportService.generateJUnitTestResults(ReportService.java:151)
+	at net.thucydides.core.reports.ReportService.generateReportsFor(ReportService.java:137)
+	at net.thucydides.core.reports.ReportService.generateReportsFor(ReportService.java:97)
+	at net.serenitybdd.jbehave.SerenityReporter.generateReports(SerenityReporter.java:469)
+	at net.serenitybdd.jbehave.SerenityReporter.afterStory(SerenityReporter.java:449)
+	at org.jbehave.core.reporters.DelegatingStoryReporter.afterStory(DelegatingStoryReporter.java:49)
+	at org.jbehave.core.reporters.ConcurrentStoryReporter.afterStory(ConcurrentStoryReporter.java:119)
+	at org.jbehave.core.embedder.StoryRunner.runBeforeOrAfterStories(StoryRunner.java:85)
+	at org.jbehave.core.embedder.StoryManager.runBeforeOrAfterStories(StoryManager.java:96)
+	at org.jbehave.core.embedder.StoryManager.runStories(StoryManager.java:91)
+	at org.jbehave.core.embedder.Embedder.runStoriesAsPaths(Embedder.java:203)
+	at net.serenitybdd.jbehave.runners.SerenityReportingRunner.run(SerenityReportingRunner.java:159)
+	... 25 more
+Caused by: java.io.FileNotFoundException: target\site\serenity\SERENITY-JUNIT-0f2b817adbb81098985b2d7fdc8f766978597e62189cd1a4cc08de25e7c51692.xml (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:213)
+	at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:162)
+	at net.thucydides.core.reports.junit.JUnitXMLOutcomeReporter.generateReportsFor(JUnitXMLOutcomeReporter.java:46)
+	at net.thucydides.core.reports.ReportService.generateJUnitTestResults(ReportService.java:149)
+	... 36 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[
+(BeforeStories)
+
+
+(AfterStories)
+Generating reports view to 'C:\Users\565362\workspace\Hello\build\classes\jbehave' using formats '[stats, console, html, xml, serenityreporter, junitscenarioreporter]' and view properties '{decorateNonHtml=true}'
+Reports view generated with 1 stories (of which 0 pending) containing 1 scenarios (of which 0 pending)
+Failures in reports view: 1 scenarios failed
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO net.thucydides.core.reports.ReportService - Reporting formats: [JSON, XML, HTML]
+[Test worker] INFO net.thucydides.core.reports.ReportService - Found reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@670441e5(format = Optional.of(XML))
+[Test worker] INFO net.thucydides.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@670441e5
+[Test worker] INFO net.thucydides.core.reports.ReportService - Found reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@3bb19c4e(format = Optional.of(JSON))
+[Test worker] INFO net.thucydides.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.json.JSONTestOutcomeReporter@3bb19c4e
+[Test worker] INFO net.thucydides.core.reports.ReportService - Found reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5f303a0c(format = Optional.of(HTML))
+[Test worker] INFO net.thucydides.core.reports.ReportService - Registering reporter: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@5f303a0c
+[Test worker] INFO net.thucydides.core.reports.ReportService - Generating reports using: net.thucydides.core.reports.xml.XMLTestOutcomeReporter@670441e5
+[Test worker] INFO net.thucydides.core.reports.ReportService - Processing test outcome Hello:Login into google page
+[Test worker] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.xml.XMLTestOutcomeReporter@670441e5: Generating report for test outcome: Hello:Login into google page
+[Test worker] INFO net.thucydides.core.reports.xml.XMLTestOutcomeReporter - Generating XML report for Login into google page to file C:\Users\565362\workspace\Hello\target\site\serenity\0f2b817adbb81098985b2d7fdc8f766978597e62189cd1a4cc08de25e7c51692.xml
+Mar 01, 2016 9:00:13 PM com.google.common.util.concurrent.ExecutionList executeListener
+SEVERE: RuntimeException while executing runnable net.thucydides.core.reports.ReportService$2@293d1cab with executor com.google.common.util.concurrent.MoreExecutors$DirectExecutorService@303d2691
+java.lang.NullPointerException
+	at net.thucydides.core.reports.xml.XMLTestOutcomeReporter.generateReportFor(XMLTestOutcomeReporter.java:80)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:210)
+	at net.thucydides.core.reports.ReportService.generateQueuedReport(ReportService.java:159)
+	at net.thucydides.core.reports.ReportService.access$000(ReportService.java:25)
+	at net.thucydides.core.reports.ReportService$2.run(ReportService.java:120)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutorService.execute(MoreExecutors.java:299)
+	at com.google.common.util.concurrent.ExecutionList.executeListener(ExecutionList.java:156)
+	at com.google.common.util.concurrent.ExecutionList.add(ExecutionList.java:101)
+	at com.google.common.util.concurrent.ListenableFutureTask.addListener(ListenableFutureTask.java:83)
+	at net.thucydides.core.reports.ReportService.generateReportsFor(ReportService.java:117)
+	at net.thucydides.core.reports.ReportService.generateReportsFor(ReportService.java:97)
+	at net.serenitybdd.jbehave.SerenityReporter.generateReports(SerenityReporter.java:469)
+	at net.serenitybdd.jbehave.SerenityReporter.afterStory(SerenityReporter.java:449)
+	at org.jbehave.core.reporters.DelegatingStoryReporter.afterStory(DelegatingStoryReporter.java:49)
+	at org.jbehave.core.reporters.ConcurrentStoryReporter.afterStory(ConcurrentStoryReporter.java:119)
+	at org.jbehave.core.embedder.StoryRunner.runBeforeOrAfterStories(StoryRunner.java:85)
+	at org.jbehave.core.embedder.StoryManager.runBeforeOrAfterStories(StoryManager.java:96)
+	at org.jbehave.core.embedder.StoryManager.runStories(StoryManager.java:91)
+	at org.jbehave.core.embedder.Embedder.runStoriesAsPaths(Embedder.java:203)
+	at net.serenitybdd.jbehave.runners.SerenityReportingRunner.run(SerenityReportingRunner.java:159)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:69)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+[Test worker] INFO net.thucydides.core.reports.ReportService - Report generated for Hello:Login into google page
+[Test worker] INFO net.thucydides.core.reports.junit.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORTS
+[Test worker] INFO net.thucydides.core.reports.junit.JUnitXMLOutcomeReporter - GENERATING JUNIT REPORT SERENITY-JUNIT-0f2b817adbb81098985b2d7fdc8f766978597e62189cd1a4cc08de25e7c51692.xml
+]]></system-err>
+</testsuite>

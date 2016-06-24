@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Login into google page" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-03-02T01:59:53" hostname="BAHCND5292F7T" time="18.859">
+  <properties/>
+  <testcase name="classMethod" classname="Scenario: Login into google page" time="18.859"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
